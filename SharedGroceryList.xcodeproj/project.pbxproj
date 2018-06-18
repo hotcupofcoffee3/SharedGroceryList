@@ -13,9 +13,14 @@
 		B513360920D854D300729FC0 /* SharedGroceryList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B513360720D854D300729FC0 /* SharedGroceryList.xcdatamodeld */; };
 		B513360B20D854D500729FC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B513360A20D854D500729FC0 /* Assets.xcassets */; };
 		B513360E20D854D500729FC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B513360C20D854D500729FC0 /* LaunchScreen.storyboard */; };
+		B513361620D8556500729FC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B513361520D8556500729FC0 /* GoogleService-Info.plist */; };
+		DB270053A9C891B6AE790EB5 /* Pods_SharedGroceryList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC694A6D85CA767E68943C /* Pods_SharedGroceryList.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259AE5C0E192ADE0DC67B9E3 /* Pods-SharedGroceryList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedGroceryList.release.xcconfig"; path = "Pods/Target Support Files/Pods-SharedGroceryList/Pods-SharedGroceryList.release.xcconfig"; sourceTree = "<group>"; };
+		2DAC694A6D85CA767E68943C /* Pods_SharedGroceryList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SharedGroceryList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5BFDA3F13CCF7BED23641E4 /* Pods-SharedGroceryList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedGroceryList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharedGroceryList/Pods-SharedGroceryList.debug.xcconfig"; sourceTree = "<group>"; };
 		B51335FD20D854D300729FC0 /* SharedGroceryList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedGroceryList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B513360020D854D300729FC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B513360220D854D300729FC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		B513360A20D854D500729FC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B513360D20D854D500729FC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B513360F20D854D500729FC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B513361520D8556500729FC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB270053A9C891B6AE790EB5 /* Pods_SharedGroceryList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C66B10840CBCA0BC9D3E814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5BFDA3F13CCF7BED23641E4 /* Pods-SharedGroceryList.debug.xcconfig */,
+				259AE5C0E192ADE0DC67B9E3 /* Pods-SharedGroceryList.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		98CD2EF9C049C8BAB79D06BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC694A6D85CA767E68943C /* Pods_SharedGroceryList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B51335F420D854D300729FC0 = {
 			isa = PBXGroup;
 			children = (
 				B51335FF20D854D300729FC0 /* SharedGroceryList */,
 				B51335FE20D854D300729FC0 /* Products */,
+				4C66B10840CBCA0BC9D3E814 /* Pods */,
+				98CD2EF9C049C8BAB79D06BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +88,7 @@
 				B513360A20D854D500729FC0 /* Assets.xcassets */,
 				B513360C20D854D500729FC0 /* LaunchScreen.storyboard */,
 				B513360F20D854D500729FC0 /* Info.plist */,
+				B513361520D8556500729FC0 /* GoogleService-Info.plist */,
 				B513360720D854D300729FC0 /* SharedGroceryList.xcdatamodeld */,
 			);
 			path = SharedGroceryList;
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B513361220D854D500729FC0 /* Build configuration list for PBXNativeTarget "SharedGroceryList" */;
 			buildPhases = (
+				0315557EB201AFC726CB670F /* [CP] Check Pods Manifest.lock */,
 				B51335F920D854D300729FC0 /* Sources */,
 				B51335FA20D854D300729FC0 /* Frameworks */,
 				B51335FB20D854D300729FC0 /* Resources */,
+				DC36B5AD976C466A236F466B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				B513360E20D854D500729FC0 /* LaunchScreen.storyboard in Resources */,
+				B513361620D8556500729FC0 /* GoogleService-Info.plist in Resources */,
 				B513360B20D854D500729FC0 /* Assets.xcassets in Resources */,
 				B513360620D854D300729FC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0315557EB201AFC726CB670F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SharedGroceryList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC36B5AD976C466A236F466B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SharedGroceryList/Pods-SharedGroceryList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SharedGroceryList/Pods-SharedGroceryList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B51335F920D854D300729FC0 /* Sources */ = {
@@ -282,15 +353,13 @@
 		};
 		B513361320D854D500729FC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5BFDA3F13CCF7BED23641E4 /* Pods-SharedGroceryList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R23Z6QNT72;
 				INFOPLIST_FILE = SharedGroceryList/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luneofthepune.SharedGroceryList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -300,15 +369,13 @@
 		};
 		B513361420D854D500729FC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259AE5C0E192ADE0DC67B9E3 /* Pods-SharedGroceryList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R23Z6QNT72;
 				INFOPLIST_FILE = SharedGroceryList/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.luneofthepune.SharedGroceryList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
